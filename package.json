@@ -1,0 +1,26 @@
+{
+  "name": "les-petits-plats",
+  "version": "1.0.0",
+  "description": "Project6",
+  "main": "index.js",
+  "author": "Nguyen_Jacques",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss ./main.css"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.1",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.6.2",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
+  }
+}
