@@ -1,4 +1,6 @@
-import { constant } from "../constant";
+const _color_blue = '#0069D9'
+const _color_red = '#C82332'
+const _color_green = '#218838'
 
 export default class DropdownButton {
     el;
@@ -26,13 +28,13 @@ export default class DropdownButton {
 
         switch (color) {
             case 'primary':
-                container.style.backgroundColor = constant._color_blue;
+                container.style.backgroundColor = _color_blue;
                 break;
             case 'danger':
-                container.style.backgroundColor = constant._color_red;
+                container.style.backgroundColor = _color_red;
                 break;
             case 'success':
-                container.style.backgroundColor = constant._color_green;
+                container.style.backgroundColor = _color_green;
                 break;
             default:
         }

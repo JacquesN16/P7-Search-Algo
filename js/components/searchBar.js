@@ -6,7 +6,6 @@ export default class SearchBar {
         this.el.classList.add('search-input');
         this.el.classList.add('col-10');
 
-
         const searchInput = document.createElement('input');
         searchInput.classList.add('form-control');
         searchInput.setAttribute('type', 'text');

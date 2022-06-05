@@ -3,7 +3,7 @@ export default class RecipeCard {
     constructor(name, time, ingredients, description) {
         this.el = document.createElement('div');
         this.el.classList.add('card');
-        this.el.innerHTML = ` <img class="card-img-top" src="./data/img/bg-recipe.png" alt="Card image cap" />`;
+        this.el.innerHTML = ` <img class="card-img-top" src="./src/img/bg-recipe.png" alt="Card image cap" />`;
 
         const cardBody = document.createElement('div');
         cardBody.classList.add('card-body');

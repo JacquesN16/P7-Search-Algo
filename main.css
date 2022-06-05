@@ -3,4 +3,149 @@
   padding: 0;
 }
 
+body {
+  margin: 20px 50px;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+header .container {
+  text-align: center;
+}
+header .container h1 {
+  color: #d04f4f;
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.search-input {
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.search-input .form-control:focus {
+  background-color: #e7e7e7;
+  box-shadow: unset;
+  border-color: #ced4da;
+}
+.search-input input {
+  border-right: none;
+  background: #e7e7e7;
+}
+.search-input span {
+  background-color: #e7e7e7;
+  padding: 10px;
+}
+.search-input span i {
+  font-size: 24px;
+}
+
+#selected-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+#selected-tags .tag-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+#selected-tags .tag-list .fa-times-circle {
+  padding-left: 20px;
+}
+
+.card-recipes {
+  padding-top: 40px;
+}
+.card-recipes .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.card-recipes .cards .card-body {
+  padding-top: 20px;
+  background: #e7e7e7;
+}
+.card-recipes .cards .card-body .title-recipes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 18px;
+}
+.card-recipes .cards .card-body .title-recipes .card-title {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.card-recipes .cards .card-body .information-recipes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+.card-recipes .cards .card-body .information-recipes .list {
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+  white-space: nowrap;
+}
+.card-recipes .cards .card-body .information-recipes .recette {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+}
+
+.filter-tags {
+  display: flex;
+  gap: 20px;
+  font-family: lato;
+  font-size: 18px;
+}
+.filter-tags .filter-tag {
+  padding: 15px 30px;
+}
+.filter-tags .dropdown-menu {
+  padding: 0px;
+}
+.filter-tags .dropdown-menu .search-tag-input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  grid-column: 1/4;
+}
+.filter-tags .dropdown-menu .search-tag-input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+.filter-tags .container-dropdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr 11fr;
+}
+.filter-tags .dropdown-item {
+  cursor: pointer;
+  color: white !important;
+}
+.filter-tags .dropdown-item:hover {
+  color: white !important;
+  background-color: unset;
+}
+
+.card-alert {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

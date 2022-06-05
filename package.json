@@ -24,3 +24,40 @@
     "eslint-plugin-promise": "^5.2.0"
   }
 }
+
+.filter-tags {
+  display: flex;
+  gap: 20px;
+  font-family: lato;
+  font-size: 18px;
+  .filter-tag {
+      padding: 15px 30px;
+  }
+  .dropdown-menu {
+      padding: 0px;
+      .search-tag-input {
+          background-color: transparent;
+          border: none;
+          color: white;
+          grid-column: 1 / 4;
+
+          &::placeholder {
+              color: white;
+              opacity: 0.5;
+          }
+      }
+  }
+  .container-dropdown {
+      display: grid;
+      grid-template-columns: 1fr 1fr 11fr;
+  }
+  .dropdown-item {
+      cursor: pointer;
+      color: white !important;
+
+      &:hover {
+          color: white !important;
+          background-color: unset;
+      }
+  }
+}
