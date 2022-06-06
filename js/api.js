@@ -1,12 +1,10 @@
 import recipes from './recipes.js';
 
 
+
+
 let _filteredRecipes = recipes;
 class recipesAPI {
-    // static getAllRecipes = () => {
-
-    //     return recipes
-    // }
 
     static getRecipes = (filterParams) => {
         if (!filterParams) {
