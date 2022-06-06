@@ -2,7 +2,6 @@ import recipes from './recipes.js';
 
 
 
-
 let _filteredRecipes = recipes;
 class recipesAPI {
 
