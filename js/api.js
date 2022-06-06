@@ -1,6 +1,18 @@
 import recipes from './recipes.js';
 
+const isSearchWordValid = (text, searchKey) => text.toLowerCase().includes(searchKey);
+const searchOnRecipes = (searchingList, searchKey) => {
+    let filteredRecipes = []
+    searchKey = searchKey.toLowerCase();
 
+    const res = searchingList.filter( item => isSearchWordValid(item.name, searchKey) 
+        || isSearchWordValid(item.description, searchKey 
+        || item.ingredients.filter(ingredient => isSearchWordValid(ingredient.ingredient, searchKey))) 
+        )
+ 
+    filteredRecipes = [...res]
+    return filteredRecipes;
+};
 
 
 let _filteredRecipes = recipes;
