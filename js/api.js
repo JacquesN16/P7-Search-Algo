@@ -8,6 +8,7 @@ const searchOnRecipes = (searchingList, searchKey) => {
     const filteredRecipes = [];
     
     searchKey = searchKey.toLowerCase();
+    
     for (let i = 0; i < searchingList.length; i++) {
         const recipe = searchingList[i];
         if (isSearchWordExist(recipe.name, searchKey)) {
