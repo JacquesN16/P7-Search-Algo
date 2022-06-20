@@ -98,6 +98,14 @@ const initRecipeList = () => {
     displayRecipeList(recipes)
 };
 
+const initTagList = () => {
+    const tagSectionEl = document.getElementById('selected-tags');
+    tagSectionEl.appendChild(tagListIngredientEl.el);
+    tagSectionEl.appendChild(tagListUtilEl.el);
+    tagSectionEl.appendChild(tagListUtensilEl.el);
+}
+
+
 initFilterButtons()
 displayRecipeList()
 initSearchBar()
