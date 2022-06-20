@@ -1,5 +1,6 @@
 import recipes from './recipes.js';
 
+
 const normalize = (text) => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '', /^.*abc$/);
 const isSearchWordExist = (text, searchKey) => text.toLowerCase().includes(searchKey);
 let _filteredRecipes = recipes;
